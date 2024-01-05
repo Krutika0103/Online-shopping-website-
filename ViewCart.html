@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Items to Cart</title>
+    <link rel="stylesheet" href="styleSheet.css">
+    <link rel="stylesheet" href="viewcart.css">
+
+</head>
+
+<body>
+    <logo class="logo">
+        <center>
+            <img src="c:\Users\LeoWebVueFE\src\images\logo.jpeg" alt="Check URL" width="100px" height="100px">
+            <big>
+                online shop
+            </big>
+        </center>
+    </logo>
+
+    <nav class="menu-bar">
+        <hr>
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="itemCatalog.html">
+                    Item Catalog
+                </a>
+            </li>
+            <li>
+                <a href="viewCart.html">
+                    View Cart
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="signup.html">
+                    Sign Up
+                </a>
+            </li>
+            <li>
+                <a href="logout.html">
+                    Logout
+                </a>
+            </li>
+            <li>
+                <a href="aboutUs.html">
+                    About Us
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </nav>
+    <header>
+        <h1 style="text-align: center;">Add Items to Cart</h1>
+    </header>
+
+    <form id="itemForm">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName" required><br>
+
+        <label for="itemQuantity">Quantity:</label>
+        <input type="number" id="itemQuantity" name="itemQuantity" required><br>
+
+        <label for="itemPrice">Price:</label>
+        <input type="number" id="itemPrice" name="itemPrice" required><br>
+
+        <button type="button" onclick="addItemToCart()">Add to Cart</button>
+    </form>
+
+    <div id="cart">
+        <h2 style="text-align: center;">Shopping Cart</h2>
+        <ul id="cartList">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total Price: $<span id="totalPrice">0.00</span></p>
+    </div>
+
+    <script>
+        const cart = [];
+        const cartList = document.getElementById("cartList");
+        const totalPrice = document.getElementById("totalPrice");
+
+        function addItemToCart() {
+            const itemName = document.getElementById("itemName").value;
+            const itemQuantity = parseInt(document.getElementById("itemQuantity").value);
+            const itemPrice = parseFloat(document.getElementById("itemPrice").value);
+
+            if (itemQuantity > 0 && itemPrice > 0) {
+                const itemTotal = itemQuantity * itemPrice;
+                cart.push({ name: itemName, quantity: itemQuantity, price: itemPrice, total: itemTotal });
+
+                // Display the item in the cart
+                const listItem = document.createElement("li");
+                listItem.textContent = `${itemName} x${itemQuantity} - $${itemTotal.toFixed(2)}`;
+                cartList.appendChild(listItem);
+
+                // Calculate and display the total price
+                const total = cart.reduce((acc, item) => acc + item.total, 0);
+                totalPrice.textContent = total.toFixed(2);
+
+                // Clear the input fields
+                document.getElementById("itemName").value = "";
+                document.getElementById("itemQuantity").value = "";
+                document.getElementById("itemPrice").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
