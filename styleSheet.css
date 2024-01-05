@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    color: rgb(243, 147, 147);
+    font-size: 4px;
+    width: 300px;
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo center img:hover {
+    width: 400px;
+    height: 400px;
+    transition-duration: 2s;
+}
+.background {
+    background-image: url('c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\mainBackground.jpg');
+
+}
+body {
+    background-image: url('c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\mainBackground.jpg');
+    background-size: auto;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(72, 6, 6);
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar {
+    background-color: rgb(175, 143, 114);
+    text-align: center;
+    float: initial;
+    font-size: larger;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 2px;
+    padding: 5px;
+    border-right: 2px solid rgba(160, 154, 154, 0.2);
+    border-left: 2px solid rgba(240, 212, 212, 0.2);
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: rgb(169, 223, 246);
+}
+
+.menu-bar ul li:hover {
+    background-color: rgb(114, 77, 46);
+    border-radius: 3px;
+}
+
+.cat {
+    width: 900px;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    margin: 30px;
+}
+
+.items {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: -1px 0 10px rgb(192, 154, 154);
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    box-shadow: -1px 0 10px rgb(194, 106, 106);
+    color: rgb(209, 235, 11);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 170px;
+    padding-bottom: 10px;
+}
+
+.wrapper {
+    height: 20px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    background: rgb(239, 241, 241);
+    color: rgb(105, 112, 245);
+    border-radius: 12px;
+    cursor: pointer;
+        justify-content: flex-start; /* Move the items to the left */
+}
+
+
+.wrapper span {
+    width: 100%;
+    font-weight: 600;
+    float: left;
+}
+
+.wrapper span.num {
+     
+    pointer-events: none;
+}
+
+.wrapper span.numH {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.wrapper span.numS {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.wrapper span.numJJ {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.wrapper span.numW {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.wrapper span.numB {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+.form {
+    margin: 20px;
+}
