@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .wrapper {
+        display: flex; /* Use flexbox to control the layout of the buttons and number input */
+        justify-content: flex-start; /* Move the items to the left */
+        align-items: center; /* Align items vertically in the center */
+    }
+
+    .minusJ,
+    .plusJ,
+    .numJ {
+    margin: 0 5px;
+        cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px; /* Add padding to the buttons for spacing */
+    }
+    .minusH,
+.plusH,
+.numH {
+    margin: 0 5px; 
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusS, .numS, .plusS {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusJJ, .numJJ, .plusJJ {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusT, .numT, .plusT {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusC, .numC, .plusC {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusF, .numF, .plusF {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusCC, .numCC, .plusCC {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusW, .numW, .plusW {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusBE, .numBE, .plusBE {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusSU, .numSU, .plusSU {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusB, .numB, .plusB {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusSR, .numSR, .plusSR {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusL, .numL, .plusL {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusK, .numK, .plusK {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+.minusBW, .numBW, .plusBW {
+    margin: 0 5px; /* Add spacing between the items */
+    cursor: pointer; /* Add pointer cursor to make the buttons look clickable */
+        padding: 5px;
+}
+        .addToCart {
+            background-color: #2874f0; /* Flipkart's primary color */
+            color: #fff; /* White text color */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 2px; /* Slight border radius */
+            transition: background-color 0.2s; /* Smooth hover effect */
+            float: right;
+            display: flex;
+        justify-content: flex-end;
+        }
+        
+        .addToCart:hover {
+            background-color: #ff9f00; /* New color on hover */
+        }
+
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shop </title>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+
+<body id="[blazerId].exercise3.html">
+    <logo class="logo">
+        <center>
+            <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\logo.jpeg" alt="Check URL" width="100px" height="100px">
+            <big>
+                online shop
+            </big>
+        </center>
+    </logo>
+    <nav class="menu-bar">
+        <hr>
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="itemCatalog.html">
+                    Item Catalog
+                </a>
+            </li>
+            <li>
+                <a href="viewCart.html">
+                    View Cart
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="signup.html">
+                    Sign Up
+                </a>
+            </li>
+            <li>
+                <a href="logout.html">
+                    Logout
+                </a>
+            </li>
+            <li>
+                <a href="aboutUs.html">
+                    About Us
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+        <center>
+            <h1>
+                Items in stock: <br>
+            </h1>
+            <h2>
+                Men Clothing: <br>
+            </h2>
+        </center>
+        <categories1 class="cat">
+            <jacket class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\jacket.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Jacket<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 250$<br> Denim Jacket from <i>Levis</i> available with very fine quality.<br>
+                    <div class="wrapper">
+                        <span class="minusJ">
+                            -
+                        </span>
+                        <span class="numJ">
+                            0
+                        </span>
+                        <span class="plusJ">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusJ = document.querySelector(".plusJ"),
+                            minusJ = document.querySelector(".minusJ"),
+                            numJ = document.querySelector(".numJ");
+                        let J = 0;
+
+                        plusJ.addEventListener("click", () => {
+                            J++;
+                            numJ.innerText = J;
+                        });
+
+                        minusJ.addEventListener("click", () => {
+                            J--;
+                            J = (J < 0) ? "0" : J;
+                            numJ.innerText = J;
+                        });
+
+                    </script>
+                </center>
+            </jacket>
+            <hoodie class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\hoodie.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Hoodie<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 100$<br> Hoodie from <i>Tommy Hilfiger</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusH">
+                            -
+                        </span>
+                        <span class="numH">
+                            0
+                        </span>
+                        <span class="plusH">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="hoodie">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusH = document.querySelector(".plusH"),
+                            minusH = document.querySelector(".minusH"),
+                            numH = document.querySelector(".numH");
+                        let H = 1;
+
+                        plusH.addEventListener("click", () => {
+                            H++;
+                            numH.innerText = H;
+                        });
+
+                        minusH.addEventListener("click", () => {
+                            H--;
+                            H = (H < 0) ? "0" : H;
+                            numH.innerText = H;
+                        });
+                    
+                    </script>
+                </center>
+            </hoodie>
+            <shirt class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\shirt.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Shirt<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 150$<br> Shirt from <i>Cougar</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusS">
+                            -
+                        </span>
+                        <span class="numS">
+                            0
+                        </span>
+                        <span class="plusS">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="shirt">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusS = document.querySelector(".plusS"),
+                            minusS = document.querySelector(".minusS"),
+                            numS = document.querySelector(".numS");
+                        let S = 1;
+
+                        plusS.addEventListener("click", () => {
+                            S++;
+                            numS.innerText = S;
+                        });
+
+                        minusS.addEventListener("click", () => {
+                            S--;
+                            S = (S < 0) ? "0" : S;
+                            numS.innerText = S;
+                        });
+ 
+
+                    </script>
+                </center>
+            </shirt>
+            <jeans class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\jeans.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Jeans<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 130$<br> Jeans from <i>Levis</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusJJ">
+                            -
+                        </span>
+                        <span class="numJJ">
+                            0
+                        </span>
+                        <span class="plusJJ">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jeans">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusJJ = document.querySelector(".plusJJ"),
+                            minusJJ = document.querySelector(".minusJJ"),
+                            numJJ = document.querySelector(".numJJ");
+                        let JJ = 1;
+
+                        plusJJ.addEventListener("click", () => {
+                            JJ++;
+                            numJJ.innerText = JJ;
+                        });
+
+                        minusJJ.addEventListener("click", () => {
+                            JJ--;
+                            JJ = (JJ < 0) ? "0" : JJ;
+                            numJJ.innerText = JJ;
+                        });
+                    </script>
+                </center>
+            </jeans>
+        </categories1>
+        <br>
+        <categories2 class="cat">
+            <tshirt class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\jacket.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Tshirt<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 250$<br> Tshirt from <i>loius vitton</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusT">
+                            -
+                        </span>
+                        <span class="numT">
+                            0
+                        </span>
+                        <span class="plusT">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusT = document.querySelector(".plusT"),
+                            minusT = document.querySelector(".minusT"),
+                            numT = document.querySelector(".numT");
+                        let T = 0;
+
+                        plusT.addEventListener("click", () => {
+                            T++;
+                            numT.innerText = T;
+                        });
+
+                        minusT.addEventListener("click", () => {
+                            T--;
+                            T = (T < 0) ? "0" : T;
+                            numT.innerText = T;
+                        });
+
+                    </script>
+                </center>
+            </tshirt>
+            <cargo class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\hoodie.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                cargo pant<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 109$<br> cargo from <i>Tommy Hilfiger</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusC">
+                            -
+                        </span>
+                        <span class="numC">
+                            0
+                        </span>
+                        <span class="plusC">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusC = document.querySelector(".plusC"),
+                            minusC = document.querySelector(".minusC"),
+                            numC = document.querySelector(".numC");
+                        let C = 0;
+
+                        plusC.addEventListener("click", () => {
+                            C++;
+                            numC.innerText = C;
+                        });
+
+                        minusC.addEventListener("click", () => {
+                            C--;
+                            C= (C < 0) ? "0" : C;
+                            numC.innerText = C;
+                        });
+
+                    </script>
+                </center>
+            </cargo>
+            <formal class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\shirt.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                formal shirt<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 157$<br> Shirt from <i>Cougaraves</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusF">
+                            -
+                        </span>
+                        <span class="numF">
+                            0
+                        </span>
+                        <span class="plusF">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusF = document.querySelector(".plusF"),
+                            minusF = document.querySelector(".minusF"),
+                            numF = document.querySelector(".numF");
+                        let F = 0;
+
+                        plusF.addEventListener("click", () => {
+                            F++;
+                            numF.innerText = F;
+                        });
+
+                        minusF.addEventListener("click", () => {
+                            F--;
+                            F = (F < 0) ? "0" : F;
+                            numF.innerText = F;
+                        });
+
+                    </script>
+                </center>
+            </formal>
+            <cotton class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\jeans.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                cotton Jeans<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 130$<br>cotton Jeans from <i>dioneerer</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusCC">
+                            -
+                        </span>
+                        <span class="numCC">
+                            0
+                        </span>
+                        <span class="plusCC">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusCC = document.querySelector(".plusCC"),
+                            minusCC = document.querySelector(".minusCC"),
+                            numCC = document.querySelector(".numCC");
+                        let CC = 0;
+
+                        plusF.addEventListener("click", () => {
+                            CC++;
+                            numF.innerText = CC;
+                        });
+
+                        minusF.addEventListener("click", () => {
+                            CC--;
+                            CC = (F < 0) ? "0" : CC;
+                            numCC.innerText = CC;
+                        });
+
+                    </script>
+                </center>
+            </cotton>
+          </categories2><br><br>
+        <center>
+            <h2>
+                Men Accessories: <br>
+            </h2>
+        </center>
+        <categories2 class="cat">
+            <watch class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\watch.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Wrist Watch<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 500$<br> Wrist Watch from <i>Tissot</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusW">
+                            -
+                        </span>
+                        <span class="numW">
+                            0
+                        </span>
+                        <span class="plusW">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="watch">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusW = document.querySelector(".plusW"),
+                            minusW = document.querySelector(".minusW"),
+                            numW = document.querySelector(".numW");
+                        let W = 1;
+
+                        plusW.addEventListener("click", () => {
+                            W++;
+                            numW.innerText = W;
+                        });
+
+                        minusW.addEventListener("click", () => {
+                            minusW.addEventListener("click", () => {
+                                if (W > 0) {
+                                    W--;
+                                    numW.innerText = W;
+                                }
+                            });
+                        });
+                    </script>
+                </center>
+            </watch>
+            <bracelet class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\bracelet.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Bracelet<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 60$<br> Bracelets from <i>Seek Discomfort</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusB">
+                            -
+                        </span>
+                        <span class="numB">
+                            0
+                        </span>
+                        <span class="plusB">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="bracelet">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusB = document.querySelector(".plusB"),
+                            minusB = document.querySelector(".minusB"),
+                            numB = document.querySelector(".numB");
+                        let B = 1;
+
+                        plusB.addEventListener("click", () => {
+                            B++;
+                            numB.innerText = B;
+                        });
+
+                        minusB.addEventListener("click", () => {
+                            if (B > 0) {
+                                B--;
+                                numB.innerText = B;
+                            }
+                        });
+                         </script>
+                         </center>
+            </bracelet>
+            <belt class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\bracelet.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Belt<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 60$<br> Belts from <i>Discomfort</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusBE">
+                            -
+                        </span>
+                        <span class="numBE">
+                            0
+                        </span>
+                        <span class="plusBE">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="belt">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusBE = document.querySelector(".plusBE"),
+                            minusBE = document.querySelector(".minusBE"),
+                            numBE = document.querySelector(".numBE");
+                        let BE = 1;
+
+                        plusBE.addEventListener("click", () => {
+                            BE++;
+                            numBE.innerText = BE;
+                        });
+
+                        minusBE.addEventListener("click", () => {
+                            if (BE > 0) {
+                                BE--;
+                                numBE.innerText = BE;
+                            }
+                        });
+                         </script>
+                         </center>
+            </belt>
+            <sunglaas class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\bracelet.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Sunglass<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 60$<br> sunglasses from <i>raybon</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusSU">
+                            -
+                        </span>
+                        <span class="numSU">
+                            0
+                        </span>
+                        <span class="plusSU">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="bracelet">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusSU = document.querySelector(".plusSU"),
+                            minusSU = document.querySelector(".minusSU"),
+                            numSU = document.querySelector(".numSU");
+                        let SU = 1;
+
+                        plusB.addEventListener("click", () => {
+                            SU++;
+                            numB.innerText = SU;
+                        });
+
+                        minusB.addEventListener("click", () => {
+                            if (SU > 0) {
+                                SU--;
+                                numSU.innerText = SU;
+                            }
+                        });
+                    </script>
+                    </center>
+                    </sunglaas>
+        </categories2><br.<br><br>
+                        <center>
+            <h2>
+                Women Clothing: <br>
+            </h2>
+        </center>
+        <categories2 class="cat">
+            <saree class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\jacket.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                saree<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 378.80$<br> traditional saree from <i>tathastu</i> available with very fine quality.<br>
+                    <div class="wrapper">
+                        <span class="minusSR">
+                            -
+                        </span>
+                        <span class="numSR">
+                            0
+                        </span>
+                        <span class="plusSR">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusSR = document.querySelector(".plusSR"),
+                            minusSR = document.querySelector(".minusSR"),
+                            numSR = document.querySelector(".numSR");
+                        let SR = 0;
+
+                        plusSR.addEventListener("click", () => {
+                            SR++;
+                            numSR.innerText = SR;
+                        });
+
+                        minusSR.addEventListener("click", () => {
+                            SR--;
+                            SR = (SR < 0) ? "0" : SR;
+                            numSR.innerText = SR;
+                        });
+
+                    </script>
+                </center>
+            </saree>
+            <lether class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\jacket.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Lether suit<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 378.80$<br>lether suit from <i>kyliekhloe</i> available with very fine quality.<br>
+                    <div class="wrapper">
+                        <span class="minusL">
+                            -
+                        </span>
+                        <span class="numL">
+                            0
+                        </span>
+                        <span class="plusL">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusL = document.querySelector(".plusL"),
+                            minusL = document.querySelector(".minusL"),
+                            numL = document.querySelector(".numL");
+                        let L = 0;
+
+                        plusL.addEventListener("click", () => {
+                            L++;
+                            numSR.innerText = L;
+                        });
+
+                        minusL.addEventListener("click", () => {
+                            L--;
+                            L = (L < 0) ? "0" : L;
+                            numSR.innerText = L;
+                        });
+
+                    </script>
+                </center>
+            </lether>
+            <kurta class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\jacket.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Kurta Set<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 119$<br> traditional kurta set from <i>mulchand</i> available with very fine quality.<br>
+                    <div class="wrapper">
+                        <span class="minusK">
+                            -
+                        </span>
+                        <span class="numK">
+                            0
+                        </span>
+                        <span class="plusK">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusK = document.querySelector(".plusK"),
+                            minusK = document.querySelector(".minusK"),
+                            numK = document.querySelector(".numK");
+                        let K = 0;
+
+                        plusK.addEventListener("click", () => {
+                            K++;
+                            numK.innerText = K;
+                        });
+
+                        minusK.addEventListener("click", () => {
+                            K--;
+                            K = (K < 0) ? "0" : K ;
+                            numK.innerText = K;
+                        });
+
+                    </script>
+                </center>
+            </kurta>
+            <bottom class="items">
+                <img src="c:\Users\Nana\Documents\GitHub\LeoWebVueFE\src\images\jacket.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                bottom wear<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 80$<br> bottom wears from <i>liba</i> available with very fine quality.<br>
+                    <div class="wrapper">
+                        <span class="minusBW">
+                            -
+                        </span>
+                        <span class="numBW">
+                            0
+                        </span>
+                        <span class="plusBW">
+                            +
+                        </span>
+                        <button class="addToCart" data-item="jacket">Add</button>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusBW = document.querySelector(".plusBW"),
+                            minusBW = document.querySelector(".minusBW"),
+                            numBW = document.querySelector(".numBW");
+                        let BW = 0;
+
+                        plusBW.addEventListener("click", () => {
+                            BW++;
+                            numBW.innerText = BW;
+                        });
+
+                        minusBW.addEventListener("click", () => {
+                            BW--;
+                           BW= (BW < 0) ? "0" : BW;
+                            numBW.innerText = BW;
+                        });
+
+                    </script>
+                </center>
+            </bottom>
+                    
+                       <script>
+                        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                     const addToCartButtons = document.querySelectorAll(".addToCart");
+
+          addToCartButtons.forEach(button => {
+                button.addEventListener("click", () => {
+        const itemContainer = button.closest(".items"); // Find the parent container for the item
+        const itemName = itemContainer.querySelector("h3 u b center").textContent.trim();
+        const itemQuantity = parseInt(itemContainer.querySelector(".numJ").textContent);
+        const itemPrice = parseFloat(itemContainer.querySelector("center").textContent.match(/\d+/)[0]);  
+        const itemTotal = itemQuantity * itemPrice;
+
+        cart.push({ name: itemName, quantity: itemQuantity, price: itemPrice, total: itemTotal });
+
+        // Save the updated cart in local storage
+        localStorage.setItem('cart', JSON.stringify(cart));
+    });
+});
+     </script>
+    </main>
+</body>
+
+</html>
